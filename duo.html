@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Котлы отопления</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.co" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main-style.css">
+
+    <style>
+      html,
+      body,
+      header,
+      .carousel{
+        height: 80vh;
+        min-height: 45rem;
+        }
+        @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .carousel{height: 100vh;
+      }          
+        }
+        @media (min-width:739px) and (max-width: 850px) {
+          html,
+      body,
+      header,
+      .carousel{height: 100vh;
+      }   
+        }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbarfix fixed-top navbar-expand-lg navbar-light white">
+      <div class="container container-fix">
+        <a href="#" class="navbar-brand  rounded mr-10 logo-fix">
+          <!-- <strong class="logo-text">LOGO</strong> -->
+          <img class="logo-img" src="img/fire.png" alt="LOGO">
+        </a>
+      
+        <button class="navbar-toggler collapse-fix" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon tog-fix"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse " id="navbarContent">
+
+          <ul class="navbar-nav mr-auto nav-menu">
+            <li class="nav-item nav-fix">
+              <a href="../src/index.html" class="nav-link nav-link-fix waves-effect rounded center">Главная</a>
+            </li>
+
+            <li class="nav-item dropdown nav-fix nav-link-fix">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Продукция
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="../src/eco.html">Автоматические котлы ВСКЗ-ЭКО</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="../src/eco-plus.html">Автоматические котлы ВСКЗ-ЭКО ПЛЮС</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="../src/komfort.html">Полуавтоматические котлы ВСКЗ-КОМФОРТ</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="../src/duo.html">Автоматические котлы ВСКЗ-ЭКО ДУО</a>
+          </li>
+        </ul>
+      </li>
+            
+            <li class="nav-item nav-fix">
+              <a href="#" class="nav-link nav-link-fix waves-effect rounded">Как купить?</a>
+            </li>
+
+          </ul>
+
+
+          <div >
+        
+          </div> 
+
+        </div>
+        
+<div class="navbar-nav  nav-flex-icons nav-fix-two header-cart cart" tabindex="0">
+
+            <div class="nav-item nav-item-fix cart-text">             
+                
+                <i class="fa fa-shopping-cart mr-1"></i>
+                <span class="clear-fix d-none d-lg-inline-block">Мой заказ</span>
+                <span class="badge red  cart-quantity">0</span>
+
+              
+            </div>
+            <!-- продукт -->
+
+            <div class="cart-content ">
+
+              <!-- итог -->
+              <div class="cart-bt-fix ">
+              <div class="cart-content-bottom">
+                
+                <div class="cart-content-btn my-btn-cart  mt-2 waves-effect" href="">Перейти к заказу</div>
+                <div class="cart-content-fullprice ">
+                  <span>Итого:</span>
+                  <span class="fullprice"></span>
+                </div>
+              </div>
+            </div>
+              
+               <ul class="cart-content-list " data-simple>
+                <div class="simple" id="simple">
+                <!-- <li class="cart-content-item">
+                  <article class="cart-content-product  cart-product">
+
+                    <img src="img/main/eco-min.png" alt="" class="cart-product-img">
+                    <div class="cart-product-text">
+                      <h3 class="cart-product-title">VSKZ-ЭКО 14</h3>
+                      <span class="cart-product-price">116 000,00 ₽</span>
+                    </div>
+                    <button class="cart-product-delete" aria-label="Удалить товар"></button>
+                  </article>
+                </li> -->
+              </div>
+              </ul>
+               
+
+            </div>
+          </div>
+      </div>
+
+
+    </nav>
+
+<main class="mt-5 pt-4">
+  <div class="container dark-grey-text mt-5">
+    <div class="row wow fadeIn">
+      <div class="col-lg-4 col-md-12 mb-4 img-cot-fix">
+        <img class="img-fluid img-fluid-fix" src="img/main/duo-min.png" alt="duo">
+      </div>
+      <div class="col-lg-8 col-md-12 mb-0">
+        <h1 class="mt-1 mb-4 header-cot-fix">Автоматические котлы VSKZ-ДУО</h1>
+        <p>Основное отличие котлов данной серии в наличии нескольких горелок: котлы 400-500кВт имеют 2 горелки, а котлы 600-800кВт имеют 3 горелки.</p>
+        <p>Данная конструктивная особенность имеет преимущество, наличие нескольких горелок повышает отказоустойчивость оборудования, так при отказе одной из горелок (попал камень, вышел из строя моторредуктор) котел все равно продолжает работать хоть и со сниженной мощностью.</p>
+        <p>Топливом является фракционный уголь до 50мм (фракция орех) и пеллеты. Стандартный диаметр шнека для котлов VSKZ-ДУО -127мм. Ручная топка отсутствует.</p>
+        <p>
+          Бункер у данных котлов расположен сзади, стандартный объем бункера на котлах 400-500кВт 2 м3, на котлах 600-800кВт 3 м3. Котлы изготовленны из стали толщиной 6мм, а высоконагруженные элементы из стали 10мм. 
+        </p>
+        <p>В числе опций увеличенные бункера и шнековое золоудаление, являющееся практически обязательным при работе на угле, при работе на пеллетах ввиду низкой зольности можно обойтись без него.
+        </p>
+        
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-12 col-xs-12 col-table-fix">
+       <!-- Tabs navs -->
+<ul class="nav nav-tabs nav-fill mb-3 mt-3" id="ex1" role="tablist">
+  <li class="nav-item " role="presentation">
+    <a
+      class="nav-link active dark-grey-text"
+      id="ex2-tab-1"
+      data-mdb-toggle="tab"
+      href="#ex2-tabs-1"
+      role="tab"
+      aria-controls="ex2-tabs-1"
+      aria-selected="true"
+      >Стоимость</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link dark-grey-text"
+      id="ex2-tab-2"
+      data-mdb-toggle="tab"
+      href="#ex2-tabs-2"
+      role="tab"
+      aria-controls="ex2-tabs-2"
+      aria-selected="false"
+      >Характеристики</a
+    >
+  </li>
+  
+</ul>
+<!-- Tabs navs -->
+<div class="tab-content" id="ex2-content">
+  <div
+    class="tab-pane fade show active"
+    id="ex2-tabs-1"
+    role="tabpanel"
+    aria-labelledby="ex2-tab-1"
+  >
+    <table class="table align-middle text-center  ">
+  <thead>
+    <tr class="">
+      <th class="table-fix align-middle" scope="col">Модель/мощность</th>      
+      <th class="table-fix align-middle" scope="col">V топки</th>
+      <th class="table-fix align-middle" scope="col">Стоимость</th>      
+      <th class="table-fix align-middle" scope="col">Оставить заявку</th>
+    </tr>
+  </thead>
+  <!-- тело аблици -->
+  <tbody >
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/duo-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ДУО 330</span> (330 кВт)</th>
+      
+      <td class="table-fix">2000 л</td>
+      
+      <td class="table-fix product-price-current">448 000</td>
+      <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/duo-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ДУО 400</span> (400 кВт)</th>
+      
+      <td class="table-fix">2000 л</td>
+      
+      <td class="table-fix product-price-current">493 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+    
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/duo-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ДУО 500</span> (500 кВт)</th>
+      
+      <td class="table-fix">2000 л</td>
+      
+      <td class="table-fix product-price-current">538 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/duo-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ДУО 600</span> (600 кВт)</th>
+      
+      <td class="table-fix">3000 л</td>
+      
+      <td class="table-fix product-price-current">796 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/duo-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ДУО 800</span> (800кВт)</th>
+      
+      <td class="table-fix">3000 л</td>
+      
+      <td class="table-fix product-price-current">926 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+  <!-- второй таб -->
+
+  <div
+    class="tab-pane fade"
+    id="ex2-tabs-2"
+    role="tabpanel"
+    aria-labelledby="ex2-tab-2"
+  >
+        <table class="table align-middle align-items-center text-center table-responsive-md">
+  <thead>
+    <tr class="">
+      <th class="table-fix align-middle th-fix" scope="col">Модель</th>      
+      <th class="table-fix align-middle" scope="col">Объём тепло<span class="table-defis">-<wbr></span>носителя</th>
+      <th class="table-fix align-middle" scope="col">Диаметр дымохода / высота дымохода</th>      
+      <th class="table-fix align-middle" scope="col">Масса котла</th>
+       <th class="table-fix align-middle" scope="col">Присоеденительный диаметр подачи / обратки</th>
+      <th class="table-fix align-middle" scope="col">Потребляемая электрическая мощность</th>
+     
+       
+    </tr>
+  </thead>
+  <!-- тело аблици -->
+  <tbody >
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ДУО 330</th>
+      
+      <td class="table-fix"></td>
+      
+      <td class="table-fix">326 мм / 4 м</td>
+      <td class="table-fix"></td>
+      <td class="table-fix">76 мм</td>
+      <td class="table-fix">1500 Вт</td>
+      
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ДУО 400</th>
+      
+      <td class="table-fix"></td>
+      
+      <td class="table-fix">326 мм / 4 м</td>
+       <td class="table-fix"></td>
+       <td class="table-fix">76 мм</td>
+       <td class="table-fix">1500 Вт</td>
+       
+    </tr>
+    
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ДУО 500</th>
+      
+      <td class="table-fix"></td>
+      
+      <td class="table-fix">326 мм / 4 м</td>
+       <td class="table-fix"></td>
+       <td class="table-fix">76 мм</td>
+       <td class="table-fix">1500 Вт</td>
+       
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ДУО 600</th>
+      
+      <td class="table-fix"></td>
+      
+      <td class="table-fix">326 мм / 4 м</td>
+       <td class="table-fix"></td>
+       <td class="table-fix">89 мм</td>
+       <td class="table-fix">2200 Вт</td>
+      
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ДУО 800</th>
+      
+      <td class="table-fix"></td>
+      
+      <td class="table-fix">326 мм / 4 м</td>
+       <td class="table-fix"></td>
+       <td class="table-fix">89 мм</td>
+       <td class="table-fix">2200 Вт</td>
+       
+    </tr>
+
+    
+  </tbody>
+</table>
+<h5 class="text-center table-header-fix mt-5 mb-4">Общие характеристики для всех котлов серии ДУО</h5>
+<table class="table">
+  
+  <tbody class="">    
+    <tr class="table-fix">
+      <th class="table-fix" scope="row">Рабочее давление теплоносителя в котле</th>
+      <td class="table-fix table-fix-two text-center align-middle">2 кг/см2</td>     
+    </tr>
+
+    
+    
+    <tr class="table-fix">
+      <th class="table-fix" scope="row">КПД</th>
+      <td class="table-fix table-fix-two text-center align-middle">82-90%</td>     
+    </tr>
+    <tr class="table-fix">
+      <th class="table-fix" scope="row">Номинальное напряжение питания</th>
+      <td class="table-fix table-fix-two text-center align-middle">~220 ± 10%</td>     
+    </tr>
+  </tbody>
+
+</table>
+<div class="container ">
+<div class="row">
+      
+      <div class="col-fix">
+        <h5 class="text-center table-header-fix-two">Габариты котлов серии ДУО</h5>
+        <div >
+          <a href="img/main/gap-duo.png" data-toggle="lightbox" data-galery="example-gallery"></a>
+          <img  class="img-eco" src="img/main/gap-duo.png" alt="Duo">
+        </div>
+      </div>
+    
+    </div>
+    </div>
+  </div>
+  <!-- на будущее для опций -->
+  <!-- <div
+    class="tab-pane fade"
+    id="ex2-tabs-3"
+    role="tabpanel"
+    aria-labelledby="ex2-tab-3"
+  >
+    Tab 3 content
+  </div> -->
+</div>
+<!-- Tabs content -->
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+</main>
+
+
+
+
+
+
+
+
+  <!-- Tabs navs -->
+
+
+</div>
+</div>
+
+    
+    <!-- Конец проекта, далее скрипты-->
+    <script src="js/cart.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
+></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script> -->
+    
+  </body>
+</html>

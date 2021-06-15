@@ -1,0 +1,86 @@
+.disable-scroll {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.modall {
+	--transition-time: 0.3s;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.7);
+	cursor: pointer;
+	overflow-y: auto;
+	overflow-x: hidden;
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: var(--transition-time);
+}
+
+.modall::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.modall__container {
+	position: relative;
+	width: 500px;
+	margin: 50px auto;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	cursor: default;
+	text-align: left;
+	display: none;
+}
+
+.modall__close {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.modall.is-open {
+	opacity: 1;
+	visibility: visible;
+	transition: var(--transition-time);
+}
+
+.modall__container.modall-open {
+	display: inline-block;
+}
+
+.fadee {
+	opacity: 0;
+	transition: var(--transition-time);
+}
+
+.fadee.animate-open {
+	opacity: 1;
+	transition: var(--transition-time);
+}
+
+.fadeeInUp {
+	opacity: 0;
+	transform: translateY(-100px);
+	transition: var(--transition-time);
+}
+
+.fadeeInUp.animate-open {
+	opacity: 1;
+	transform: translateY(0);
+	transition: var(--transition-time);
+}

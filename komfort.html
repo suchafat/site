@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Котлы отопления</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.co" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main-style.css">
+
+    <style>
+      html,
+      body,
+      header,
+      .carousel{
+        height: 80vh;
+        min-height: 45rem;
+        }
+        @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .carousel{height: 100vh;
+      }          
+        }
+        @media (min-width:739px) and (max-width: 850px) {
+          html,
+      body,
+      header,
+      .carousel{height: 100vh;
+      }   
+        }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbarfix fixed-top navbar-expand-lg navbar-light white">
+      <div class="container container-fix">
+        <a href="#" class="navbar-brand  rounded mr-10 logo-fix">
+          <img class="logo-img" src="img/fire.png" alt="LOGO">
+          <!-- <strong class="logo-text">LOGO</strong> -->
+        </a>
+      
+        <button class="navbar-toggler collapse-fix" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon tog-fix"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse " id="navbarContent">
+
+          <ul class="navbar-nav mr-auto nav-menu">
+            <li class="nav-item nav-fix">
+              <a href="../src/index.html" class="nav-link nav-link-fix waves-effect rounded center">Главная</a>
+            </li>
+
+            <li class="nav-item dropdown nav-fix nav-link-fix">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Продукция
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="../src/eco.html">Автоматические котлы ВСКЗ-ЭКО</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="../src/eco-plus.html">Автоматические котлы ВСКЗ-ЭКО ПЛЮС</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="../src/komfort.html">Полуавтоматические котлы ВСКЗ-КОМФОРТ</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="../src/duo.html">Автоматические котлы ВСКЗ-ЭКО ДУО</a>
+          </li>
+        </ul>
+      </li>
+            
+            <li class="nav-item nav-fix">
+              <a href="#" class="nav-link nav-link-fix waves-effect rounded">Как купить?</a>
+            </li>
+
+          </ul>
+
+
+          <div >
+        
+          </div> 
+
+        </div>
+        
+<div class="navbar-nav  nav-flex-icons nav-fix-two header-cart cart" tabindex="0">
+
+            <div class="nav-item nav-item-fix cart-text">             
+                
+                <i class="fa fa-shopping-cart mr-1"></i>
+                <span class="clear-fix d-none d-lg-inline-block">Мой заказ</span>
+                <span class="badge red  cart-quantity">0</span>
+
+              
+            </div>
+            <!-- продукт -->
+
+            <div class="cart-content ">
+
+              <!-- итог -->
+              <div class="cart-bt-fix ">
+              <div class="cart-content-bottom">
+                
+                <div class="cart-content-btn my-btn-cart  mt-2 waves-effect" href="">Перейти к заказу</div>
+                <div class="cart-content-fullprice ">
+                  <span>Итого:</span>
+                  <span class="fullprice"></span>
+                </div>
+              </div>
+            </div>
+              
+               <ul class="cart-content-list " data-simple>
+                <div class="simple" id="simple">
+                <!-- <li class="cart-content-item">
+                  <article class="cart-content-product  cart-product">
+
+                    <img src="img/main/eco-min.png" alt="" class="cart-product-img">
+                    <div class="cart-product-text">
+                      <h3 class="cart-product-title">VSKZ-ЭКО 14</h3>
+                      <span class="cart-product-price">116 000,00 ₽</span>
+                    </div>
+                    <button class="cart-product-delete" aria-label="Удалить товар"></button>
+                  </article>
+                </li> -->
+              </div>
+              </ul>
+               
+
+            </div>
+          </div>
+      </div>
+
+
+    </nav>
+
+<main class="mt-5 pt-4">
+  <div class="container dark-grey-text mt-5">
+    <div class="row wow fadeIn">
+      <div class="col-lg-4 col-md-12 mb-4 img-cot-fix">
+        <img class="img-fluid img-fluid-fix" src="img/main/convinient-min.png" alt="komfort">
+      </div>
+      <div class="col-lg-8 col-md-12 mb-0">
+        <h1 class="mt-1 mb-4 header-cot-fix">Полуавтоматические котлы VSKZ-КОМФОРТ</h1>
+        <p>Котлы длительного горения, они же полуавтоматические котлы VSKZ-КОМФОРТ 14-100кВт изготовленны из стали толщиной 6мм. Колосники водонаполненные. Топливом являются дрова,уголь,топливные брикеты. </p>
+
+<p>Длительность горения по практике достигает от 12 до 24 часов на угле, что достигается сравнительно большой загрузкой топлива и управлением подачей воздуха в топку посредством вентилятора,наддува управляемым микропроцессорным контроллером. Воздух нагнетаемый вентилятором нагревается, проходя по каналу прилегаемому к теплообменнику и подается под колосники, соответственно котел нижнего горения. Тело котла закрыто теплоизоляционным кожухом. Котлы 150-200 кв. изготавливаются из стали толщиной 8мм. Все котлы поставляются в комплектации с вентиляторами и контроллером.</p>
+
+<p>Для оформления заказа необходимо прислать на электронную почту: tdvskz@mail.ru свои ФИО, прописку и номер телефона (для физ.лица); либо реквизиты предприятия для (юр.лица). А так же указать модель котла, его мощность, расположение бункера (справа/слева) и доп. опции если необходимо. </p>
+        
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-12 col-xs-12 col-table-fix">
+       <!-- Tabs navs -->
+<ul class="nav nav-tabs nav-fill mb-3 mt-3" id="ex1" role="tablist">
+  <li class="nav-item " role="presentation">
+    <a
+      class="nav-link active dark-grey-text"
+      id="ex2-tab-1"
+      data-mdb-toggle="tab"
+      href="#ex2-tabs-1"
+      role="tab"
+      aria-controls="ex2-tabs-1"
+      aria-selected="true"
+      >Стоимость</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link dark-grey-text"
+      id="ex2-tab-2"
+      data-mdb-toggle="tab"
+      href="#ex2-tabs-2"
+      role="tab"
+      aria-controls="ex2-tabs-2"
+      aria-selected="false"
+      >Характеристики</a
+    >
+  </li>
+  
+</ul>
+<!-- Tabs navs -->
+<div class="tab-content" id="ex2-content">
+  <div
+    class="tab-pane fade show active"
+    id="ex2-tabs-1"
+    role="tabpanel"
+    aria-labelledby="ex2-tab-1"
+  >
+    <table class="table align-middle text-center  ">
+  <thead>
+    <tr class="">
+      <th class="table-fix align-middle" scope="col">Модель/мощность</th>      
+      <th class="table-fix align-middle" scope="col">V топки</th>
+      <th class="table-fix align-middle" scope="col">Стоимость</th>      
+      <th class="table-fix align-middle" scope="col">Оставить заявку</th>
+    </tr>
+  </thead>
+  <!-- тело аблици -->
+  <tbody >
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/convinient-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-КОМФОРТ 14</span> (14 кВт)</th>
+      
+      <td class="table-fix">50 л</td>
+      
+      <td class="table-fix product-price-current">64 000</td>
+      <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/convinient-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-КОМФОРТ 24</span> (24 кВт)</th>
+      
+      <td class="table-fix">80 л</td>
+      
+      <td class="table-fix product-price-current">72 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+    
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/convinient-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-КОМФОРТ 32</span> (32 кВт)</th>
+      
+      <td class="table-fix">140 л</td>
+      
+      <td class="table-fix product-price-current">77 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/convinient-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-КОМФОРТ 42</span> (42кВт)</th>
+      
+      <td class="table-fix">170 л</td>
+      
+      <td class="table-fix product-price-current">91 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/convinient-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-КОМФОРТ 60</span> (60кВт)</th>
+      
+      <td class="table-fix">200 л</td>
+      
+      <td class="table-fix product-price-current">105 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/convinient-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-КОМФОРТ 80</span> (80кВт)</th>
+      
+      <td class="table-fix">240 л</td>
+      
+      <td class="table-fix product-price-current">123 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/convinient-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-КОМФОРТ 100</span> (100кВт)</th>
+      
+      <td class="table-fix">300 л</td>
+      
+      <td class="table-fix product-price-current">141 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/convinient-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-КОМФОРТ 150</span> (150кВт)</th>
+      
+      <td class="table-fix">430 л</td>
+      
+      <td class="table-fix product-price-current">221 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/convinient-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-КОМФОРТ 200</span> (200кВт)</th>
+      
+      <td class="table-fix">580 л</td>
+      
+      <td class="table-fix product-price-current">262 000</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    
+
+    
+
+    
+  </tbody>
+</table>
+  </div>
+  <!-- второй таб -->
+
+  <div
+    class="tab-pane fade"
+    id="ex2-tabs-2"
+    role="tabpanel"
+    aria-labelledby="ex2-tab-2"
+  >
+        <table class="table align-middle align-items-center text-center table-responsive-md">
+  <thead>
+    <tr class="">
+      <th class="table-fix align-middle th-fix" scope="col">Модель</th>      
+      <th class="table-fix align-middle" scope="col">Объём тепло<span class="table-defis">-<wbr></span>носителя</th>
+      <th class="table-fix align-middle" scope="col">Диаметр дымохода / высота дымохода</th>      
+      <th class="table-fix align-middle" scope="col">Масса котла</th>
+       <th class="table-fix align-middle" scope="col">Обьем топки</th>
+      <th class="table-fix align-middle" scope="col">Глубина топки</th>
+      <th class="table-fix align-middle" scope="col">Ширина топки</th>
+      <th class="table-fix align-middle" scope="col">Высота топки</th>
+       
+    </tr>
+  </thead>
+  <!-- тело аблици -->
+  <tbody >
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-КОМФОРТ 14</th>
+      
+      <td class="table-fix">45 л</td>
+      
+      <td class="table-fix">159 мм / 4 м</td>
+      <td class="table-fix">288 кг</td>
+      <td class="table-fix">51 л</td>
+      <td class="table-fix">320 мм</td>
+      <td class="table-fix">340 мм</td>
+      <td class="table-fix">411 мм</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-КОМФОРТ 24</th>
+      
+      <td class="table-fix">65 л</td>
+      
+      <td class="table-fix">159 мм / 4 м</td>
+       <td class="table-fix">355 кг</td>
+       <td class="table-fix">80 л</td>
+       <td class="table-fix">520 мм</td>
+       <td class="table-fix">340 мм</td>
+       <td class="table-fix">411 мм</td>
+    </tr>
+    
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-КОМФОРТ 32</th>
+      
+      <td class="table-fix">106 л</td>
+      
+      <td class="table-fix">200 мм / 4 м</td>
+       <td class="table-fix">385 кг</td>
+       <td class="table-fix">120 л</td>
+       <td class="table-fix">530 мм</td>
+       <td class="table-fix">400 мм</td>
+       <td class="table-fix">494 мм</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-КОМФОРТ 42</th>
+      
+      <td class="table-fix">160 л</td>
+      
+      <td class="table-fix">200 мм / 5 м</td>
+       <td class="table-fix">405 кг</td>
+       <td class="table-fix">150 л</td>
+       <td class="table-fix">680 мм</td>
+       <td class="table-fix">400 мм</td>
+       <td class="table-fix">494 мм</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-КОМФОРТ 60</th>
+      
+      <td class="table-fix">190 л</td>
+      
+      <td class="table-fix">200 мм / 6 м</td>
+       <td class="table-fix">525 кг</td>
+       <td class="table-fix">203 л</td>
+       <td class="table-fix">550 мм</td>
+       <td class="table-fix">490 мм</td>
+       <td class="table-fix">660 мм</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-КОМФОРТ 80</th>
+      
+      <td class="table-fix">225 л</td>
+      
+      <td class="table-fix">200 мм / 6 м</td>
+       <td class="table-fix">680 кг</td>
+       <td class="table-fix">242 л</td>
+       <td class="table-fix">660 мм</td>
+       <td class="table-fix">490 мм</td>
+       <td class="table-fix">660 мм</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-КОМФОРТ 100</th>
+      
+      <td class="table-fix">255 л</td>
+      
+      <td class="table-fix">200 мм / 6 м</td>
+       <td class="table-fix">750 кг</td>
+       <td class="table-fix">295 л</td>
+       <td class="table-fix">830 мм</td>
+       <td class="table-fix">490 мм</td>
+       <td class="table-fix">660 мм</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-КОМФОРТ 150</th>
+      
+      <td class="table-fix">330 л</td>
+      
+      <td class="table-fix">200 мм / 6 м</td>
+       <td class="table-fix">1100 кг</td>
+       <td class="table-fix">471 л</td>
+       <td class="table-fix">860 мм</td>
+       <td class="table-fix">660 мм</td>
+       <td class="table-fix">760 мм</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-КОМФОРТ 200</th>
+      
+      <td class="table-fix">390 л</td>
+      
+      <td class="table-fix">200 мм / 6 м</td>
+       <td class="table-fix">1300 кг</td>
+       <td class="table-fix">607 л</td>
+       <td class="table-fix">1000 мм</td>
+       <td class="table-fix">660 мм</td>
+       <td class="table-fix">860 мм</td>
+    </tr>
+
+    
+
+    
+
+    
+  </tbody>
+</table>
+<h5 class="text-center table-header-fix mt-5 mb-4">Общие характеристики для всех котлов серии КОМФОРТ</h5>
+<table class="table">
+  
+  <tbody class="">    
+    <tr class="table-fix">
+      <th class="table-fix" scope="row">Рабочее давление теплоносителя в котле</th>
+      <td class="table-fix table-fix-two text-center align-middle">2 кг/см2</td>     
+    </tr>
+
+    <tr class="table-fix">
+      <th class="table-fix" scope="row">Присоеденительный диаметр подачи/обратки</th>
+      <td class="table-fix table-fix-two text-center align-middle">50 мм</td>     
+    </tr>
+    <tr class="table-fix">
+      <th class="table-fix" scope="row">Потребляемая электрическая мощность</th>
+      <td class="table-fix table-fix-two text-center align-middle">120 Вт / для КОМФОРТ 150 и КОМФОРТ 200 (250 Вт) </td>     
+    </tr>
+    <tr class="table-fix">
+      <th class="table-fix" scope="row">КПД</th>
+      <td class="table-fix table-fix-two text-center align-middle">80%</td>     
+    </tr>
+    <tr class="table-fix">
+      <th class="table-fix" scope="row">Номинальное напряжение питания</th>
+      <td class="table-fix table-fix-two text-center align-middle">~220 В</td>     
+    </tr>
+  </tbody>
+
+</table>
+<div class="container ">
+<div class="row">
+      
+      <div class="col-fix">
+        <h5 class="text-center table-header-fix-two">Габариты котлов серии КОМФОРТ</h5>
+        <div >
+          <a href="img/main/gap-comfort.png" data-toggle="lightbox" data-galery="example-gallery"></a>
+          <img  class="img-eco" src="img/main/gap-comfort.png" alt="Comfort">
+        </div>
+      </div>
+    
+    </div>
+    </div>
+  </div>
+  <!-- на будущее для опций -->
+  <!-- <div
+    class="tab-pane fade"
+    id="ex2-tabs-3"
+    role="tabpanel"
+    aria-labelledby="ex2-tab-3"
+  >
+    Tab 3 content
+  </div> -->
+</div>
+<!-- Tabs content -->
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+</main>
+
+
+
+
+
+
+
+
+  <!-- Tabs navs -->
+
+
+</div>
+</div>
+
+    
+    <!-- Конец проекта, далее скрипты-->
+    <script src="js/cart.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
+></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script> -->
+    
+  </body>
+</html>

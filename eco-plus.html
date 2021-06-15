@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Котлы отопления</title>
+
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.co" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="libs/modal/modal.css">
+
+
+    <style>
+      html,
+      body,
+      header,
+      .carousel{
+        height: 80vh;
+        min-height: 45rem;
+        }
+        @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .carousel{height: 100vh;
+      }          
+        }
+        @media (min-width:739px) and (max-width: 850px) {
+          html,
+      body,
+      header,
+      .carousel{height: 100vh;
+      }   
+        }
+      
+    </style>
+  </head>
+  <body>
+        <nav class="navbar navbarfix fixed-top navbar-expand-lg navbar-light white">
+      <div class="container container-fix">
+        <a href="#" class="navbar-brand  rounded mr-10 logo-fix">
+          <img class="logo-img" src="img/fire.png" alt="LOGO">
+          <!-- <strong class="logo-text">LOGO</strong> -->
+        </a>
+      
+        <button class="navbar-toggler collapse-fix" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon tog-fix"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse " id="navbarContent">
+
+          <ul class="navbar-nav mr-auto nav-menu">
+            <li class="nav-item nav-fix">
+              <a href="../src/index.html" class="nav-link nav-link-fix waves-effect rounded center">Главная</a>
+            </li>
+
+            <!-- <li class="nav-item activee nav-fix">
+              <a href="#" class="nav-link nav-link-fix waves-effect rounded center">Продукция</a>
+            </li> -->
+            <!-- Dropdown -->
+      <li class="nav-item dropdown nav-fix nav-link-fix rounded">
+        <a
+          class="nav-link dropdown-toggle waves-effect rounded"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Продукция
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="../src/eco.html">Автоматические котлы ВСКЗ-ЭКО</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="../src/eco-plus.html">Автоматические котлы ВСКЗ-ЭКО ПЛЮС</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="../src/komfort.html">Полуавтоматические котлы ВСКЗ-КОМФОРТ</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="../src/duo.html">Автоматические котлы ВСКЗ-ЭКО ДУО</a>
+          </li>
+        </ul>
+      </li>
+            
+            <li class="nav-item nav-fix">
+              <a href="#" class="nav-link nav-link-fix waves-effect rounded">Как купить?</a>
+            </li>
+
+          </ul>
+
+
+          <div >
+        
+          </div> 
+
+        </div>
+        <!-- Оформление заказа -->
+<div class="navbar-nav  nav-flex-icons nav-fix-two header-cart cart" tabindex="0">
+
+            <div class="nav-item nav-item-fix cart-text">             
+                
+                <i class="fa fa-shopping-cart mr-1"></i>
+                <span class="clear-fix d-none d-lg-inline-block ">Мой заказ</span>
+                <span class="badge red  cart-quantity">0</span>
+
+              
+            </div>
+            <!-- продукт -->
+
+            <div class="cart-content ">
+
+              <!-- итог -->
+              <div class="cart-bt-fix ">
+              <div class="cart-content-bottom">
+
+
+                
+
+                
+                <!-- btn-primary  -->
+
+                <button class="btn-light cart-content-btn cart-content__btn my-btn-cart mt-2 waves-effect " data-graph-path="modall" data-graph-animation="fadeInUp">Оформить заказ</button>
+                <div class="cart-content-fullprice ">
+                  <span>Итого:</span>
+                  <span class="fullprice"></span>
+                </div>
+              </div>
+            </div>
+              
+               <ul class="cart-content-list " data-simple>
+                <div class="simple" id="simple">
+                <!-- <li class="cart-content-item">
+                  <article class="cart-content-product  cart-product">
+
+                    <img src="img/main/eco-min.png" alt="" class="cart-product-img">
+                    <div class="cart-product-text">
+                      <h3 class="cart-product-title">VSKZ-ЭКО 14</h3>
+                      <span class="cart-product-price">116 000,00 ₽</span>
+                    </div>
+                    <button class="cart-product-delete" aria-label="Удалить товар"></button>
+                  </article>
+                </li> -->
+              </div>
+              </ul>
+               
+
+            </div>
+          </div>
+      </div>
+
+
+    </nav>
+
+ 
+
+
+<main class="mt-5 pt-4">
+  <div class="container dark-grey-text mt-5">
+    <div class="row wow fadeIn">
+      <div class="col-lg-4 col-md-12 mb-4 img-cot-fix">
+        <img class="img-fluid img-fluid-fix " src="img/main/eco-plus-min.png" alt="eco-plus">
+      </div>
+      <div class="col-lg-8 col-md-12 mb-0">
+        <h1 class="mt-1 mb-4 header-cot-fix">Автоматические котлы ВСКЗ-ЭКО Плюс</h1>
+        <p>Автоматические котлы VSKZ-ЭКО мощностью от 14 до 300 кВт предназначены для отопления жилых домов, магазинов, складов, производственных помещений и других зданий, площадью от 70 до 3000м2. </p>
+
+<p>Котлы изготовленны из стали толщиной 6мм (на котлах от 250кВт высоконагруженные части изготовленны из стали толщиной 8мм). Горелки изготовленны из чугуна. Топливом являются уголь и пеллеты, в ручном режиме дрова (Ручная топка присутствует в котлах мощностью до 50кВт). Опционально устанавливается ретортная чугунная горелка, поворотная чугунная ретортная горелка или проходная чугунная пеллетная горелка. Расположение бункера на выбор слева или справа. Так же в качестве опций доступны увеличенные бункера и автоматическое золоудаление.</p>
+
+<p>Для оформления заказа необходимо прислать на электронную почту: tdvskz@mail.ru свои ФИО, прописку и номер телефона (для физ.лица); либо реквизиты предприятия для (юр.лица). А так же указать модель котла, его мощность, расположение бункера (справа/слева) и доп. опции если необходимо. </p>
+        
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-12 col-xs-12 col-table-fix">
+       <!-- Tabs navs -->
+<ul class="nav nav-tabs nav-fill mb-3 mt-3" id="ex1" role="tablist">
+  <li class="nav-item " role="presentation">
+    <a
+      class="nav-link active dark-grey-text"
+      id="ex2-tab-1"
+      data-mdb-toggle="tab"
+      href="#ex2-tabs-1"
+      role="tab"
+      aria-controls="ex2-tabs-1"
+      aria-selected="true"
+      >Стоимость</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link dark-grey-text"
+      id="ex2-tab-2"
+      data-mdb-toggle="tab"
+      href="#ex2-tabs-2"
+      role="tab"
+      aria-controls="ex2-tabs-2"
+      aria-selected="false"
+      >Характеристики</a
+    >
+  </li>
+  
+</ul>
+<!-- Tabs navs -->
+<div class="tab-content" id="ex2-content">
+  <div
+    class="tab-pane fade show active"
+    id="ex2-tabs-1"
+    role="tabpanel"
+    aria-labelledby="ex2-tab-1"
+  >
+    <table class="table align-middle text-center  ">
+  <thead>
+    <tr class="">
+    
+      <th class="table-fix align-middle" scope="col">Модель/мощность</th>      
+      <th class="table-fix align-middle" scope="col">V бункера</th>
+      <th class="table-fix align-middle" scope="col">Стоимость</th>      
+      <th class="table-fix align-middle" scope="col">Оставить заявку</th>
+    </tr>
+  </thead>
+  <!-- тело аблици -->
+
+  <tbody >
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/eco-plus-min.png" alt="" class="cart-product__img "></th>
+      <th class="table-fix " scope="row"><span class="product-title">VSKZ-ЭКО Плюс 20</span> (20 кВт)</th>
+      
+      <td class="table-fix">300 л</td>
+      
+      <td class="table-fix "><span class="product-price-current">129 000</span> ₽</td>
+      <td class="table-fix"><!-- <a class=" btn-xs btn-table-fix text-white btn-color product-btn" href="#">+</a> -->
+        <button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/eco-plus-min.png" alt="" class="cart-product__img"></th>
+      <th class="table-fix " scope="row"><span class="product-title">VSKZ-ЭКО Плюс 26</span> (26 кВт)</th>
+      
+      <td class="table-fix">300 л</td>
+      
+      <td class="table-fix"><span class="product-price-current">139 000</span> ₽</td>
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+    
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/eco-plus-min.png" alt="" class="cart-product__img"></th>
+      <th class="table-fix " scope="row"><span class="product-title">VSKZ-ЭКО Плюс 34</span> (34 кВт)</th>
+      
+      <td class="table-fix">450 л</td>
+      <td class="table-fix"><span class="product-price-current">157 000</span> ₽</td>
+      
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/eco-plus-min.png" alt="" class="cart-product__img"></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ЭКО Плюс 44</span> (44кВт)</th>
+      
+      <td class="table-fix">450 л</td>
+      <td class="table-fix"><span class="product-price-current">164 000</span> ₽</td>
+      
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/eco-plus-min.png" alt="" class="cart-product__img"></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ЭКО Плюс 54</span> (54кВт)</th>
+      
+      <td class="table-fix">450 л</td>
+      <td class="table-fix"><span class="product-price-current">175 000</span> ₽</td>
+      
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/eco-plus-min.png" alt="" class="cart-product__img"></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ЭКО Плюс 65</span> (65кВт)</th>
+      
+      <td class="table-fix">600 л</td>
+      <td class="table-fix"><span class="product-price-current">200 000</span> ₽</td>
+      
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/eco-plus-min.png" alt="" class="cart-product__img"></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ЭКО Плюс 85</span> (85кВт)</th>
+      
+      <td class="table-fix">600 л</td>
+      <td class="table-fix"><span class="product-price-current">220 000</span> ₽</td>
+      
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/eco-plus-min.png" alt="" class="cart-product__img"></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ЭКО Плюс 110</span> (110кВт)</th>
+      
+      <td class="table-fix">600 л</td>
+      <td class="table-fix"><span class="product-price-current">259 000</span> ₽</td>
+      
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/eco-plus-min.png" alt="" class="cart-product__img"></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ЭКО Плюс 140</span> (140кВт)</th>
+      
+      <td class="table-fix">600 л</td>
+      <td class="table-fix"><span class="product-price-current">298 000</span> ₽</td>
+      
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/eco-plus-min.png" alt="" class="cart-product__img"></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ЭКО Плюс 160</span> (160кВт)</th>
+      
+      <td class="table-fix">600 л</td>
+      <td class="table-fix"><span class="product-price-current">334 000</span> ₽</td>
+      
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    <tr class="product">
+      <th class="table-fix-sec image-switch__img"><img src="img/main/eco-plus-min.png" alt="" class="cart-product__img"></th>
+      <th class="table-fix" scope="row"><span class="product-title">VSKZ-ЭКО Плюс 210</span> (210кВт)</th>
+      
+      <td class="table-fix">600 л</td>
+      <td class="table-fix"><span class="product-price-current">369 000</span> ₽</td>
+      
+       <td class="table-fix"><button class=" btn-xs btn-table-fix text-white btn-color product-btn">+</button></td>
+    </tr>
+
+    
+
+    
+  </tbody>
+</table>
+  </div>
+  <!-- второй таб -->
+
+  <div
+    class="tab-pane fade"
+    id="ex2-tabs-2"
+    role="tabpanel"
+    aria-labelledby="ex2-tab-2"
+  >
+        <table class="table align-middle align-items-center text-center table-responsive-md">
+  <thead>
+    <tr class="">
+      <th class="table-fix align-middle th-fix" scope="col">Модель</th>      
+      <th class="table-fix align-middle" scope="col">Объём тепло<span class="table-defis">-<wbr></span>носителя</th>
+      <th class="table-fix align-middle" scope="col">Диаметр дымохода / высота дымохода</th>      
+      <th class="table-fix align-middle" scope="col">Масса котла</th>
+       <th class="table-fix align-middle" scope="col">КПД</th>
+      <th class="table-fix align-middle" scope="col">Номинальное напряжение питания</th>
+       
+    </tr>
+  </thead>
+  <!-- тело аблици -->
+  <tbody >
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ЭКО Плюс 20</th>
+      
+      <td class="table-fix">55 л</td>
+      
+      <td class="table-fix">159 мм / 3 м</td>
+      <td class="table-fix">305 кг</td>
+      <td class="table-fix">80-90%</td>
+      <td class="table-fix">~220 ± 10%</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ЭКО Плюс 26</th>
+      
+      <td class="table-fix">81 л</td>
+      
+      <td class="table-fix">159 мм / 3 м</td>
+       <td class="table-fix">315 кг</td>
+       <td class="table-fix">80-90%</td>
+       <td class="table-fix">~220 ± 10%</td>
+    </tr>
+    
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ЭКО Плюс 34</th>
+      
+      <td class="table-fix">65 л</td>
+      
+      <td class="table-fix">159 мм / 3 м</td>
+       <td class="table-fix">350 кг</td>
+       <td class="table-fix">80-90%</td>
+       <td class="table-fix">~220 ± 10%</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ЭКО Плюс 44</th>
+      
+      <td class="table-fix">102 л</td>
+      
+      <td class="table-fix">208 мм / 3 м</td>
+       <td class="table-fix">435 кг</td>
+       <td class="table-fix">80-90%</td>
+       <td class="table-fix">~220 ± 10%</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ЭКО Плюс 54</th>
+      
+      <td class="table-fix">110 л</td>
+      
+      <td class="table-fix">208 мм / 3 м</td>
+       <td class="table-fix">490 кг</td>
+       <td class="table-fix">80-90%</td>
+       <td class="table-fix">~220 ± 10%</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ЭКО Плюс 65</th>
+      
+      <td class="table-fix">140 л</td>
+      
+      <td class="table-fix">208 мм / 3 м</td>
+       <td class="table-fix">570 кг</td>
+       <td class="table-fix">80-90%</td>
+       <td class="table-fix">~220 ± 10%</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ЭКО Плюс 85</th>
+      
+      <td class="table-fix">170 л</td>
+      
+      <td class="table-fix">208 мм / 3 м</td>
+       <td class="table-fix">625 кг</td>
+       <td class="table-fix">80-90%</td>
+       <td class="table-fix">~220 ± 10%</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ЭКО Плюс 110</th>
+      
+      <td class="table-fix">200 л</td>
+      
+      <td class="table-fix">208 мм / 4 м</td>
+       <td class="table-fix">900 кг</td>
+       <td class="table-fix">82-90%</td>
+       <td class="table-fix">~220 ± 10%</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ЭКО Плюс 140</th>
+      
+      <td class="table-fix">223 л</td>
+      
+      <td class="table-fix">208 мм / 4 м</td>
+       <td class="table-fix">1000 кг</td>
+       <td class="table-fix">82-90%</td>
+       <td class="table-fix">~220 ± 10%</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ЭКО Плюс 160</th>
+      
+      <td class="table-fix">400 л</td>
+      
+      <td class="table-fix">208 мм / 4 м</td>
+       <td class="table-fix">1150 кг</td>
+       <td class="table-fix">82-90%</td>
+       <td class="table-fix">~220 ± 10%</td>
+    </tr>
+
+    <tr>
+      <th class="table-fix" scope="row">VSKZ-ЭКО Плюс 210</th>
+      
+      <td class="table-fix">500 л</td>
+      
+      <td class="table-fix">208 мм / 4 м</td>
+       <td class="table-fix">1300 кг</td>
+       <td class="table-fix">82-90%</td>
+       <td class="table-fix">~380</td>
+    </tr>
+
+    
+
+    
+  </tbody>
+</table>
+<h5 class="text-center table-header-fix mt-5 mb-4">Общие характеристики для всех котлов серии ЭКО Плюс</h5>
+<table class="table">
+  
+  <tbody class="">    
+    <tr class="table-fix">
+      <th class="table-fix" scope="row">Рабочее давление теплоносителя в котле</th>
+      <td class="table-fix table-fix-two text-center align-middle">2 кг/см2</td>     
+    </tr>
+
+    <tr class="table-fix">
+      <th class="table-fix" scope="row">Присоеденительный диаметр подачи/обратки</th>
+      <td class="table-fix table-fix-two text-center align-middle">50 мм</td>     
+    </tr>
+    <tr class="table-fix">
+      <th class="table-fix" scope="row">Потребляемая электрическая мощность</th>
+      <td class="table-fix table-fix-two text-center align-middle">400 Вт</td>     
+    </tr>
+    
+  </tbody>
+
+</table>
+<div class="container ">
+<div class="row">
+      
+      <div class="col-fix">
+        <h5 class="text-center table-header-fix-two">Габариты котлов серии ЭКО Плюс</h5>
+        <div >
+          <a href="img/main/gap-eco-plus.png" data-toggle="lightbox" data-galery="example-gallery"></a>
+          <img  class="img-eco" src="img/main/gap-eco-plus.png" alt="">
+        </div>
+      </div>
+    
+    </div>
+    </div>
+  </div>
+  <!-- на будущее для опций -->
+  <!-- <div
+    class="tab-pane fade"
+    id="ex2-tabs-3"
+    role="tabpanel"
+    aria-labelledby="ex2-tab-3"
+  >
+    Tab 3 content
+  </div> -->
+</div>
+<!-- Tabs content -->
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+ 
+</main>
+ <div class="modall">
+    <div class="modall__container order-modall" role="dialog" aria-modal="true" data-graph-target="modall">
+      <div class="modall-content order-modall__content">
+        <div class="order-modall__top">
+          <h2 class="order-modall__title">Оформление заказа</h2>
+          <span class="order-modall__number">Заказ № 3456 67</span>
+        </div>
+        <div class="order-modall__info">
+          <div class="order-modall__quantity order-modall__info-item">Товаров в заказе: <span>3 шт</span></div>
+          <div class="order-modall__summ order-modall__info-item">Общая сумма заказа: <span class="">568 789 ₽</span></div>
+          <div class="order-modall__products order-modall__info-item">
+            <button class="order-modall__btn">Состав заказа</button>
+            <ul class="order-modall__list">
+              <!-- <li class="order-modall__item">
+                <article class="order-modall__product order-product">
+                  <img src="img/main/eco-min.png" alt="" class="order-product__img">
+                  <div class="order-product__text">
+                    <h3 class="order-product__title">VSKZ-ЭКО Плюс 20</h3>
+                    <span class="order-product__price">129 000 ₽ </span>
+                  </div>
+                  <button class="order-product__delete">Удалить</button>
+                </article>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+        <form action="#" class="order-modall__form order my-form">
+          <input type="hidden" name="theme" value="Обратный звонок">
+          <input type="hidden" name="admin_email[]" value="suchafatofmyindiancrubs@mail.ru">
+          <input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+          <label class="order__label">
+            <!-- <span class="order__text">Ваше имя</span> -->
+            <input type="text" name="Имя" class="order__input" placeholder="Ваше имя">
+          </label>
+          <label class="order__label">
+            <!-- <span class="order__text">Номер телефона</span> -->
+            <input type="tel" name="Телефон" class="order__input" placeholder="Номер телефона">
+          </label>
+          <label class="order__label">
+            <!-- <span class="order__text">Ваше имя</span> -->
+            <input type="email" name="Email" class="order__input" placeholder="Эл. почта">
+          </label>
+          <button class="order__btn    order-btn-first  waves-effect">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- 32 минута -->
+
+
+
+
+<!-- <footer class="footer-fix text-white font-small mt-4 wow fadeIn">
+  
+  <div class="container">
+    <div class="row">
+      <div class="pt-4 col-lg-6
+      mb-2">
+    <h6><strong>"Инженерка"</strong> - отопительные котлы в Чите</h6>
+    
+    <a href="#" class="btn btn-outline-white" role="button"></a>
+  </div>
+    </div>
+  <div class="row">
+  <div class="col-lg-6 footer-text-fix">
+    <h6><strong>Контакты:</strong></h6>
+    <p class="mb-1">Телефон:</p>
+    <p class="mb-1">Mail:</p>
+    <p class="mb-1">Адресс:</p>
+  </div>
+  </div>
+  </div>
+  <div class="footer-copyright footer-fix-sec py-3 white-text">
+    Разработчик и дизайнер сайта: Анисимов Юрий (SquareWeb)<br>
+    Тел: 8 924 374 95 73<br>
+    Instagram: square_web<br>
+    E-mail: ipovab20@gmail.com
+  </div>
+</footer> -->
+  <!-- Tabs navs -->
+
+
+</div>
+</div>
+     <script src="libs/modal/modal.js"></script>
+    <script src="js/cart.js"></script>
+    <!-- Конец проекта, далее скрипты-->
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
+></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script> -->
+    
+  </body>
+</html>
